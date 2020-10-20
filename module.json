@@ -1,0 +1,12 @@
+{
+  "name": "cone-measurement-angle",
+  "title": "Cone Measurement Angle",
+  "description": "A simple module that changes the default angle for the cone measurement tool.",
+  "author": "threz_",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.5.0"
+  "compatibleCoreVersion": "0.7.4"
+  "scripts": [
+  "scripts/cone-measurement-angle-config.js"
+  ]
+}
