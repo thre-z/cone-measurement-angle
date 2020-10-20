@@ -9,5 +9,7 @@
   "scripts": [
     "scripts/cone-measurement-angle-config.js"
   ],
-  "url":"https://github.com/thre-z/cone-measurement-angle"
+  "url":"https://github.com/thre-z/cone-measurement-angle",
+  "manifest":"https://raw.githubusercontent.com/thre-z/cone-measurement-angle/main/module.json"
+  "download":"https://test.zip"
 }
