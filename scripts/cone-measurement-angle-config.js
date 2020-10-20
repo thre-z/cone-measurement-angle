@@ -11,10 +11,8 @@ Hooks.on("init", () => {
 
 class DDImporter extends Application
 {
+  let settings = game.settings.get("cone-measurement-angle", "coneAngle")
 
-  getData(){
-    let settings = game.settings.get("cone-measurement-angle", "coneAngle")
-  }
   CONFIG.MeasuredTemplate.defaults.angle = settings.coneAngle;
 
 }
