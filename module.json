@@ -3,7 +3,7 @@
   "title": "Cone Measurement Angle",
   "description": "A simple module that changes the default angle for the cone measurement tool.",
   "author": "threz_",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minimumCoreVersion": "0.5.0",
   "compatibleCoreVersion": "0.7.4",
   "scripts": [
@@ -11,5 +11,5 @@
   ],
   "url":"https://github.com/thre-z/cone-measurement-angle",
   "manifest":"https://raw.githubusercontent.com/thre-z/cone-measurement-angle/main/module.json",
-  "download":"https://github.com/thre-z/cone-measurement-angle/archive/0.1.0.zip"
+  "download":"https://github.com/thre-z/cone-measurement-angle/archive/0.1.1.zip"
 }
