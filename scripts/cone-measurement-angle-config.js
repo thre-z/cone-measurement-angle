@@ -1,10 +1,10 @@
 Hooks.on("init", () => {
   game.settings.register("cone-measurement-angle", "coneAngle", {
     name: "Cone Measurement Angle",
-    hint: "Default angle for cone measurement tool.",
+    hint: "Angle for cone measurement tool. Must be an number between 1 and 360. Default 90.",
     scope: "world",
     config: true,
-    type: Integer,
+    type: number,
     default: 90
   })
   
