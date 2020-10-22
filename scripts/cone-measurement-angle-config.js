@@ -13,10 +13,10 @@ Hooks.on("init", () => {
 
 Hooks.on("closeSettingsConfig", () => {
 
-  if (game.settings.get("cone-measurement-angle","coneAngle") > 360 || game.settings.get("cone-measurement-angle","coneAngle") < 1) {
-    game.settings.set("cone-measurement-angle","coneAngle",90);
+  if (game.settings.get("cone-measurement-angle", "coneAngle") > 360 || game.settings.get("cone-measurement-angle", "coneAngle") < 1) {
+    game.settings.set("cone-measurement-angle", "coneAngle",90);
     CONFIG.MeasuredTemplate.defaults.angle = 90;
   } else {
-    CONFIG.MeasuredTemplate.defaults.angle = game.settings.get("cone-measurement-angle","coneAngle");
+    CONFIG.MeasuredTemplate.defaults.angle = game.settings.get("cone-measurement-angle", "coneAngle");
   }
 })
