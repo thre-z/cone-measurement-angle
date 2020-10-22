@@ -7,12 +7,16 @@ Hooks.on("init", () => {
     type: Integer,
     default: 90
   })
+  
+  CONFIG.MeasuredTemplate.defaults.angle = game.settings.get("cone-measurement-angle","coneAngle");
 })
 
-class DDImporter extends Application
-{
-  let settings = game.settings.get("cone-measurement-angle", "coneAngle")
+Hooks.on("closeSettingsConfig", () => {
 
-  CONFIG.MeasuredTemplate.defaults.angle = settings.coneAngle;
-
-}
+  if (game.settings.get("cone-measurement-angle","coneAngle") > 360 || game.settings.get("cone-measurement-angle","coneAngle") < 1) {
+    game.settings.set("cone-measurement-angle","coneAngle",90);
+    CONFIG.MeasuredTemplate.defaults.angle = 90;
+  } else {
+    CONFIG.MeasuredTemplate.defaults.angle = game.settings.get("cone-measurement-angle","coneAngle");
+  }
+})
